@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./QGIS.ico">
+    <meta name="theme-color" content="#006400">
+    <title>QGIS2web</title>
+</head>
+<body>
+    <div id="wave">
+        <h1>QGIS2web</h1>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+          el: "#wave",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x30ff00,
+          backgroundColor: 0x0
+        })
+   </script>
+   <div class="padding-div"></div>
+
+   <div class="width">
+    <h2>Whai is my creation</h2>
+    <p>
+       I developed a GIS map of the flood damage of July, 2008.
+       I use QGIS and QGIS2Web. QGIS is one of the FOSS4G stands for Free Open-Source Software for GeoSpatial.
+       QGIS2Web is a plug-in of QGIS to release the Internet.
+     </p>
+     <h2>The hazard map using QGIS</h2>
+     <p>
+        In July 2008, Japan experienced a major rainstorm disaster.
+        Many people were affected by this disaster.
+        Japan has experienced many flood disasters like this to data.
+        To prepare for future floods, we must learn from the past disaster records.
+        So, I have developed the hazard map in Osu City, Ehime Prefecture using some GIS data created by the Geospatial Information Authority of Japan.
+        I realized to put an interactive hazard map on the website using QGIS2web! Let's see the dynamic hazard map which you have never seen yet!
+     </p>
+
+     <div class="img_div">
+        <img id="Outline_img" src="./new_system_white.png">
+     </div>
+     <p>Some of the information is missing on my rented server, so please download the file from the following link</p>
+     <div class="a-div">
+        <a href="https://github.com/Myxogastria0808/qgis2web" target="_blank"  rel="noopener noreferrer">
+            Please click here!
+        </a>
+     </div>
+   </div>
+</body>
+</html>
