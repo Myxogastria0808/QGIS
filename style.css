@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     top: 0;
     left: 0;
-    background-color: rgb(22, 0, 94);
+    background-color: #2f3238;
   }
   h1 {
       color: #30ff00;
@@ -33,7 +33,7 @@ body, html {
   }
 
   .padding-div {
-    background: linear-gradient( black, rgb(22, 0, 94));
+    background: linear-gradient( black, #2f3238);
     width: 100vw;
     height: 150px;
   }
@@ -68,8 +68,81 @@ body, html {
 }
 a {
   color:#30ff00;
-  font-size: 20px;
+  text-decoration: none;
+  font-size: 30px;
 }
 .a-div {
   text-align: center;
+}
+
+@media screen and (min-width: 445px) {
+  a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 444px) and (min-width: 376px) {
+  a {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  a {
+    font-size: 21px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.neon {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #0f0;
+  text-shadow: 0 0 50px rgba(0,255,0,.5);
+}
+.neon span {
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  opacity: .3;
+}
+.flash {
+  animation: flash-anime 5s linear infinite;
+}
+@keyframes flash-anime {
+  0%   {opacity: 1;}
+  50%  {opacity: 1;}
+  51%  {opacity: 0.3;}
+  52%  {opacity: 1;}
+  75% {opacity: 1;}
+  76% {opacity: 0.6;}
+  77% {opacity: 1;}
+  78% {opacity: 0.3;}
+  79% {opacity: 1;}
 }
